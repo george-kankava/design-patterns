@@ -40,8 +40,8 @@ public class Validator {
         System.out.println("numericValidator.validate(\"1283\") : " + numericValidator.validate("1283"));
         System.out.println("numericValidator.validate(\"39sf93\") : " + numericValidator.validate("39sf93"));
         // Using lambda
-        Validator lambdaNumbericValidator = new Validator(text -> text.matches("\\d+"));
-        System.out.println("lambdaNumbericValidator.validate(\"123\") : " + lambdaNumbericValidator.validate("123"));
-        System.out.println("lambdaNumbericValidator.validate(\"12g3\") : " + lambdaNumbericValidator.validate("12g3"));
+        Validator lambdaNumericValidator = new Validator(text -> text.matches("\\d+"));
+        System.out.println("lambdaNumericValidator.validate(\"123\") : " + lambdaNumericValidator.validate("123"));
+        System.out.println("lambdaNumericValidator.validate(\"12g3\") : " + lambdaNumericValidator.validate("12g3"));
     }
 }
